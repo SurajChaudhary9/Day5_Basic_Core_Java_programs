@@ -2,40 +2,23 @@ package com.javabasics;
 
 import java.util.Scanner;
 
-public class PrimeFactor
-{
-	public static void primeFactor() {
-			
-			int n, is_prime=1;;
-			System.out.println("Enter any number = ");
-			Scanner sc = new Scanner(System.in);
-			n = sc.nextInt();
-			
-			for(int i=2; i<n; i++)
-			{
-				if ( (n%i) == 0 )
-				{
-					for(int j=2; j<i; j++)
-					{
-						if ( (i%j) == 0 )
-						{
-							is_prime=0 ;
-							break;
-						}
-					}
-					
-					if ( is_prime == 1 )
-						System.out.println(i+" is a prime no.");
-					else
-						System.out.println(i+" is not a prime no.");
-					sc.close();
-				}
-			}
-		}
+public class PrimeFactor{
+	
+public static void primeFactor() {
+	Scanner sc = new Scanner(System.in);
 
-		public static void main(String[] args) {
-			
-			primeFactor();
-		}
+	System.out.println("Enter the number to Find Factors: ");
+	int Number = sc.nextInt();
 
+	for(int i = 1; i <= Number; i++) {
+		if(Number%i == 0) {
+			System.out.println(i);
+		}
+	}
+	sc.close();
+}
+public static void main(String[] args) {
+	primeFactor();
+
+}
 }
