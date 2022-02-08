@@ -24,3 +24,4 @@ public class HarmonicValue
 	}
 	
 }
+//print Nth harmonic value
