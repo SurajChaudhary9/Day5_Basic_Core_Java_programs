@@ -38,4 +38,4 @@ public class PrimeFactor
 			primeFactor();
 		}
 
-	}
+}
