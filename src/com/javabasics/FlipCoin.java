@@ -39,7 +39,7 @@ public class FlipCoin
         System.out.println();
         System.out.println("Number of Heads = " + heads);
         System.out.println("Number of Tails = " + tails);
-        //percentage calculation
+        //percentage calculations head and tails
         perh = (heads * +t) / flips; 
         pert = (tails * +t) / flips;
        
